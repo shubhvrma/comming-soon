@@ -1,0 +1,126 @@
+* {
+    font-family: 'helvetica neue';
+    margin: 0;
+}
+
+body {
+    background: url('https://images.unsplash.com/photo-1489659429806-4069d3fcde9a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4de43593d8bed850b6372081cb52cc46&auto=format&fit=crop&w=1039&q=80');
+    background-position: center;
+    background-size: cover;
+    overflowX: hidden;
+}
+
+.wrap {
+    height: 100vh;
+    background: rgba(0,0,0, 0.4);
+}
+
+.wrap .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrap .header h1 {
+    margin: 50px 0 10px 0;
+    font-size: 60px;
+    color: white;
+    text-decoration: overline;
+}
+
+.wrap .header p {
+    font-size: 25px;
+    color: white;
+}
+
+.countdown {
+    display: flex;
+    height: 500px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown .outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown .outer .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 30px;
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.countdown .outer .circle p {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 725px) {
+    .countdown > :last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .wrap .header h1 {
+        font-size: 50px;
+    }
+
+    .wrap .header p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .wrap .header h1 {
+        font-size: 40px;
+    }
+
+    .wrap .header p {
+        font-size: 15px;
+    }
+
+    .countdown .outer .circle {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .countdown > :nth-last-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .wrap .header h1 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .countdown {
+        height: 400px;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .countdown {
+        height: 350px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .countdown {
+        height: 300px;
+    }
+}
